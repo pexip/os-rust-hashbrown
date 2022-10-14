@@ -1,0 +1,88 @@
+Source: rust-hashbrown
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 25),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>,
+ librust-ahash-0.7-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Ximin Luo <infinity0@debian.org>
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/hashbrown]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/hashbrown
+Rules-Requires-Root: no
+
+Package: librust-hashbrown-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ librust-ahash-0.7+compile-time-rng-dev,
+ librust-ahash-0.7-dev,
+ librust-bumpalo-3+default-dev (>= 3.5.0-~~),
+ librust-compiler-builtins-0.1+default-dev (>= 0.1.2-~~),
+ librust-rayon-1+default-dev,
+ librust-rustc-std-workspace-core-1+default-dev,
+ librust-serde-1-dev (>= 1.0.25-~~)
+Provides:
+ librust-hashbrown+ahash-dev (= ${binary:Version}),
+ librust-hashbrown+ahash-compile-time-rng-dev (= ${binary:Version}),
+ librust-hashbrown+bumpalo-dev (= ${binary:Version}),
+ librust-hashbrown+compiler-builtins-dev (= ${binary:Version}),
+ librust-hashbrown+core-dev (= ${binary:Version}),
+ librust-hashbrown+default-dev (= ${binary:Version}),
+ librust-hashbrown+inline-more-dev (= ${binary:Version}),
+ librust-hashbrown+nightly-dev (= ${binary:Version}),
+ librust-hashbrown+raw-dev (= ${binary:Version}),
+ librust-hashbrown+rayon-dev (= ${binary:Version}),
+ librust-hashbrown+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-hashbrown+rustc-internal-api-dev (= ${binary:Version}),
+ librust-hashbrown+serde-dev (= ${binary:Version}),
+ librust-hashbrown-0-dev (= ${binary:Version}),
+ librust-hashbrown-0+ahash-dev (= ${binary:Version}),
+ librust-hashbrown-0+ahash-compile-time-rng-dev (= ${binary:Version}),
+ librust-hashbrown-0+bumpalo-dev (= ${binary:Version}),
+ librust-hashbrown-0+compiler-builtins-dev (= ${binary:Version}),
+ librust-hashbrown-0+core-dev (= ${binary:Version}),
+ librust-hashbrown-0+default-dev (= ${binary:Version}),
+ librust-hashbrown-0+inline-more-dev (= ${binary:Version}),
+ librust-hashbrown-0+nightly-dev (= ${binary:Version}),
+ librust-hashbrown-0+raw-dev (= ${binary:Version}),
+ librust-hashbrown-0+rayon-dev (= ${binary:Version}),
+ librust-hashbrown-0+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-hashbrown-0+rustc-internal-api-dev (= ${binary:Version}),
+ librust-hashbrown-0+serde-dev (= ${binary:Version}),
+ librust-hashbrown-0.12-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+ahash-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+ahash-compile-time-rng-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+bumpalo-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+compiler-builtins-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+core-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+default-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+inline-more-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+nightly-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+raw-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+rayon-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+rustc-internal-api-dev (= ${binary:Version}),
+ librust-hashbrown-0.12+serde-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+ahash-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+ahash-compile-time-rng-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+bumpalo-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+compiler-builtins-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+core-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+default-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+inline-more-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+nightly-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+raw-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+rayon-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+rustc-dep-of-std-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+rustc-internal-api-dev (= ${binary:Version}),
+ librust-hashbrown-0.12.3+serde-dev (= ${binary:Version})
+Description: Rust port of Google's SwissTable hash map - Rust source code
+ This package contains the source for the Rust hashbrown crate, packaged by
+ debcargo for use with cargo and dh-cargo.

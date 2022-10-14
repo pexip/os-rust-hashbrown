@@ -1,0 +1,51 @@
+rust-hashbrown (0.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.12.3 from crates.io using debcargo 2.5.0
+
+ -- Blair Noctis <n@sail.ng>  Thu, 13 Oct 2022 22:10:16 -0400
+
+rust-hashbrown (0.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.12.1 from crates.io using debcargo 2.5.0
+  * drop patches already upstream.
+
+ -- Daniel Kahn Gillmor <dkg@fifthhorseman.net>  Mon, 27 Jun 2022 17:02:36 -0400
+
+rust-hashbrown (0.11.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.11.2 from crates.io using debcargo 2.5.0
+  * Reinstate ahash feature (Closes: 987324)
+  * Add patch to make testsuite work with rand 0.8.
+  * Establish baseline for tests.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 29 May 2022 16:45:06 +0000
+
+rust-hashbrown (0.11.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.11.2 from crates.io using debcargo 2.5.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Sat, 01 Jan 2022 21:21:30 +0100
+
+rust-hashbrown (0.11.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.11.2 from crates.io using debcargo 2.5.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Sat, 01 Jan 2022 21:11:11 +0100
+
+rust-hashbrown (0.9.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Package hashbrown 0.9.1 from crates.io using debcargo 2.4.4-alpha.0
+
+ -- Sylvestre Ledru <sylvestre@debian.org>  Tue, 22 Dec 2020 16:57:52 +0100
+
+rust-hashbrown (0.1.8-1) unstable; urgency=medium
+
+  * Package hashbrown 0.1.8 from crates.io using debcargo 2.2.9
+
+ -- Ximin Luo <infinity0@debian.org>  Sat, 19 Jan 2019 12:49:57 -0800

@@ -1,0 +1,74 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --all-features
+Features: test-name=rust-hashbrown:@
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features ahash
+Features: test-name=librust-hashbrown-dev:ahash
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features ahash-compile-time-rng
+Features: test-name=librust-hashbrown-dev:ahash-compile-time-rng
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features bumpalo
+Features: test-name=librust-hashbrown-dev:bumpalo
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features compiler_builtins
+Features: test-name=librust-hashbrown-dev:compiler_builtins
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features core
+Features: test-name=librust-hashbrown-dev:core
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets 
+Features: test-name=librust-hashbrown-dev:default
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features inline-more
+Features: test-name=librust-hashbrown-dev:inline-more
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features nightly
+Features: test-name=librust-hashbrown-dev:nightly
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features raw
+Features: test-name=librust-hashbrown-dev:raw
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features rayon
+Features: test-name=librust-hashbrown-dev:rayon
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features rustc-dep-of-std
+Features: test-name=librust-hashbrown-dev:rustc-dep-of-std
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features rustc-internal-api
+Features: test-name=librust-hashbrown-dev:rustc-internal-api
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features --features serde
+Features: test-name=librust-hashbrown-dev:serde
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test hashbrown 0.12.3 --all-targets --no-default-features
+Features: test-name=librust-hashbrown-dev:
+Depends: dh-cargo (>= 18), librust-doc-comment-0.3+default-dev (>= 0.3.1-~~), librust-fnv-1+default-dev (>= 1.0.7-~~), librust-lazy-static-1+default-dev (>= 1.4-~~), librust-rand-0.8+default-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), librust-rayon-1+default-dev, librust-serde-test-1+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
